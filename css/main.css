@@ -21,7 +21,7 @@ body {
   margin: 0;
 }
 
-h1 {
+.iron {
   color: #fff;
   background-color: #ffcc00;
   padding: .5em;
@@ -30,7 +30,7 @@ h1 {
 }
 
 .ironman {
-  font-size: 10em;
+  font-size: 15em;
   display: block;
   text-decoration: none;
   color: #900000;
@@ -60,14 +60,178 @@ h1 {
 @keyframes ironman-move {
     
     0% {
-        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
     }
     
     50% {
-        -webkit-transform: translateY(-16px);
+        transform: translateY(-16px);
     }
     
     100% {
-        -webkit-transform: translateY(22px);
+        transform: translateY(22px);
     }
+}
+
+.cap-title {
+  color: #fff;
+  background-color: #3333ff;
+  padding: .5em;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.cap {
+  font-size: 15em;
+  display: block;
+  text-decoration: none;
+  color: #ff0000;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-animation: shield-rotate 5s linear infinite;
+  animation: shield-rotate 5s linear infinite;
+}
+
+@-webkit-keyframes shield-rotate {
+ 
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+  
+}
+
+@keyframes shield-rotate {
+ 
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+  
+}
+
+.hulk-title {
+  color: #fff;
+  background-color: #6600cc;
+  padding: .5em;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.hulk {
+  font-size: 15em;
+  display: block;
+  text-decoration: none;
+  color: #009933;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-animation: hulk-scale 5s linear infinite alternate;
+  animation: hulk-scale 5s linear infinite alternate;
+}
+
+@-webkit-keyframes hulk-scale {
+ 
+  0% {
+    -webkit-transform: scale(1.5,1.5);
+  }
+  
+  34% {
+    -webkit-transform: scale(.7,.7);
+  }
+  
+  67% {
+    -webkit-transform: scale(1.5,1.5);
+  }
+  
+  100% {
+    -webkit-transform: scale(.7,.7);
+  }
+  
+}
+
+@keyframes hulk-scale {
+ 
+  0% {
+    transform: scale(1.5,1.5);
+  }
+  
+  34% {
+    transform: scale(.7,.7);
+  }
+  
+  67% {
+    transform: scale(1.5,1.5);
+  }
+  
+  100% {
+    transform: scale(.7,.7);
+  }
+  
+}
+
+.thor-title {
+  color: #fff;
+  background-color: #1affff;
+  padding: .5em;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.hammer {
+  font-size: 15em;
+  display: block;
+  text-decoration: none;
+  color: #505050;
+  margin: 0 auto;
+  -webkit-animation: hammer-throw 5s linear infinite;
+  animation: hammer-throw 5s linear infinite;
+}
+
+@-webkit-keyframes hammer-throw {
+  
+  0% {
+    -webkit-transform: translate(20px,20px);
+  }
+  
+  34% {
+    -webkit-transform: translate(40px,-40px);
+   
+  }
+  
+  67% {
+    -webkit-transform: translate(60px,50px);
+    
+  }
+  
+  100% {
+    -webkit-transform: translate(80px,-20px);
+   
+  }
+}
+
+@keyframes hammer-throw {
+  
+  0% {
+    transform: translate(20px,20px);
+  }
+  
+  34% {
+    transform: translate(40px,-40px);
+   
+  }
+  
+  67% {
+    transform: translate(60px,50px);
+    
+  }
+  
+  100% {
+    transform: translate(80px,-20px);
+   
+  }
 }
